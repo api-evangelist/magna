@@ -1,8 +1,24 @@
 aid: magna
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/magna.png
 name: Magna
-description: 'Magna is a company surfaced as a portfolio company of forerunner-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Magna is a direct-to-consumer beverage brand (drinkmagna.com) making a
+  magnesium-based electrolyte hydration drink mix. The product pairs a triple-magnesium
+  formulation (malate, gluconate, glycinate) with electrolytes and is marketed to athletes
+  and fitness enthusiasts for hydration, energy, and recovery. Backed by Forerunner
+  Ventures and added to the API Evangelist network as a consumer-sector company profile.
+  The brand operates as a retail/e-commerce storefront and publishes no public developer
+  API, documentation, or developer portal at this time.'
 url: https://raw.githubusercontent.com/api-evangelist/magna/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Consumer
+- Beverage
+- Health
+- Wellness
+- Hydration
+- Electrolytes
+- Direct to Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/magna-domain-security.yml
 - type: Website
   url: https://drinkmagna.com
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
